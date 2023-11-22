@@ -1,0 +1,67 @@
+/* navigation */
+#navbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+#navbar::before{
+    height: 100px;
+}
+#navbar ul li{
+    margin: 8px 8px;
+}
+#navbar ul li a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 8px;
+    font-size: 1rem;
+}
+#welcome{
+    height: 381px;
+}
+#welcome h1{
+    font-size: 2.8rem;
+}
+#welcome p {
+    padding: 5px 10px;
+    font-size: 0.8;
+}
+#items{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#items div{
+    width: 90%;
+}
+#client{
+    height: 200px;
+}
+#client::before{
+    height: 200px;
+}
+#client .logos{
+    /* agar width ke bahar jane laga toh flex-wrap : wrap krne se niche chla jayega. acha h bahot jaga kaaam ha sakta h */
+    flex-wrap: wrap; 
+}
+#client .logos img{
+    width: 60px;
+    height: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#contact form{
+    padding: 0px;
+    width: 80%;
+}
+#contact form input,#contact form textarea{
+    width: 70%;
+}
+footer{
+    font-size: 1rem;
+    padding: 6px;
+}

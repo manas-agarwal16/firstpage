@@ -1,0 +1,277 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    /* anchor tag ka use krke kissi or section me jaye toh smoothly jane keliye. */
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(245, 245, 245, 0.671);
+}
+#navbar{
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    /* border: 1px solid red; */
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.5;
+}
+#navbar img{
+    /* border: 2px solid yellow; */
+    margin-left: 20px;
+    height: 60px;
+    width: 60px;
+}
+#navbar ul{
+    display: flex;
+    /* border: 2px solid white; */
+    align-items: center;
+}
+#navbar ul li{
+    list-style: none;
+    /* border: 1px solid green; */
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+#navbar ul li a{
+    z-index: 10;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    /* border: 1px solid blue; */
+    border-radius: 5px;
+    padding: 0px 15px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+#navbar ul li a:hover{
+    background-color: whitesmoke;
+    text-shadow: none;
+    color: black;
+}
+/* #navbar ul li a.active{
+    background-color: black;
+    color: white;
+} */
+#welcome{
+    display: flex;
+    flex-direction: column;
+    height: 422px;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+#welcome::before{
+    content: "";
+    background: url('bg2_food.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 483px;
+    z-index: -1;
+    opacity: 0.73;
+}
+
+#welcome h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3.6rem;
+    margin: 15px 0px;
+    color: white;
+    /* border: 1px solid black; */
+    text-shadow: 2px 2px 2px black;
+}
+#welcome p{
+    text-align: center;
+    color: white;
+    padding: 5px 40px;
+    font-size: 1.2rem;
+    /* border: 1px solid blue; */
+    text-shadow: 1px 1px black;
+}
+#welcome button{
+    padding: 7px 13px;
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(190, 243, 84);
+    transition: all 0.4s ease-in-out 0s;
+    font-size: 1rem;
+}
+#welcome button:hover{
+    transform: scale(1.2);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#Services h2{
+    /* border: 2px solid blue; */
+    margin: 27px 0px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    text-align: center;
+}
+#items{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid yellow; */
+    margin: 20px 0px;
+}
+#items div{
+    border: 2px solid red;
+    border-radius: 28px;
+    width: 30%px;
+    height: 280px;
+    background-color: rgba(240, 174, 174, 0.34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+#items div img{
+    width: 100px;
+    height: 70px;
+    /* border: 2px solid blue; */
+    margin: 0px 8px;
+    padding: 8px 8px;
+}
+#items div h3{
+    /* border: 2px solid blue; */
+    margin: 4px 8px;
+    padding: 8px 8px;
+    font-size: 1.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#items div p{
+    /* border: 2px solid blue; */
+    margin: 0px 8px;
+    padding: 8px 8px;
+    text-align: center;
+    font-size: 1rem;
+}
+/* client section */
+#client{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* agar ham chahate h ki jitni space me kaam hojaye unti lele toh position relative. */
+    /* navbar with position sticky only works on parent elment with definite context that's why giving specific height */
+    /* position: relative; */
+    height: 240px;
+    margin: 15px 0px;
+}
+#client::before{
+    content: "";
+    background: url('/bg2_food.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    z-index: -2;
+    opacity: 0.3;
+}
+#client h2{
+    font-size: 2.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    margin: 10px 0px;
+    text-align: center;
+}
+#client .logos{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 25px 0px;
+}
+#client .logos img{
+    width: 88px;
+
+    height: auto;
+    margin: 10px;
+    /* border: 1px solid black; */
+}
+/* contact section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* position: relative; */
+    height: 400px;
+    margin: 5px 0px;
+}
+#contact::before{
+    content: "";
+    background: url('/contact_logo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#contact h2{
+    font-size: 2.3rem;
+    margin: 10px 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#contact form{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+#contact form label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+}
+#contact form input{
+    border: 1px solid grey;
+    width: 400px;
+    height: 25px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+#contact form textarea{
+    border: 1px solid grey;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 4px;
+    border-radius: 10px;
+    width: 400px;
+    resize: none;
+}
+footer div{
+    text-align: center;
+    margin: 10px 0px;
+}
